@@ -8,13 +8,16 @@ The Vendor Management System is a Django-based application designed to manage ve
 - **Purchase Order Tracking**: Track purchase orders with detailed attributes including items, quantity, and status.
 - **Vendor Performance Evaluation**: Calculate performance metrics such as on-time delivery rate, quality rating, and fulfillment rate.
 
-## Installation
 
-Follow these steps to set up the project locally.
-
-### Prerequisites
-
-- Python 3.9 or higher
-- pip
-- virtualenv (optional, but recommended)
+## API Endpoints
+POST /api/vendors/: Create a new vendor.
+GET /api/vendors/: List all vendors.
+GET /api/vendors/{vendor_id}/: Retrieve a specific vendor's details.
+PUT /api/vendors/{vendor_id}/: Update a vendor's details.
+DELETE /api/vendors/{vendor_id}/: Delete a vendor.
+POST /api/purchase_orders/: Create a purchase order.
+GET /api/purchase_orders/: List all purchase orders.
+GET /api/purchase_orders/{po_id}/: Retrieve details of a specific purchase order.
+PUT /api/purchase_orders/{po_id}/: Update a purchase order.
+DELETE /api/purchase_orders/{po_id}/: Delete a purchase order.
 
